@@ -1,0 +1,129 @@
+/* Overall page styling */
+body {
+    background-color: #c0c0c0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Loading screen */
+.loading-screen {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-bar {
+    width: 80%;
+    border: 1px solid green;
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.loading-progress {
+    background-color: green;
+    height: 100%;
+    width: 0;
+    animation: load 3s linear forwards;
+}
+
+@keyframes load {
+    100% {
+        width: 100%;
+    }
+}
+
+img{
+    margin-left: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+p{
+    font-size: 26px;
+    column-gap: 5;
+    font-weight: bold;
+}
+
+/* Window */
+.window {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    width: 80vw;
+    max-width: 1600px;
+    margin: auto;
+    box-shadow: 5px 5px #808080;
+}
+
+.hidden {
+    display: none;
+}
+
+.window-header {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Command prompt */
+.command-prompt {
+    background-color: black;
+    color: green;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.prompt {
+    color: green;
+}
+
+.cmd-input {
+    background: black;
+    border: none;
+    color: green;
+    outline: none;
+    font-family: 'Courier New', monospace;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000080;
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #808080;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav's Retro Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div id="loading-screen" class="loading-screen">
+        <p>Booting Portfolio.exe...</p>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Main Window -->
+    <div class="window hidden" id="main-window">
+        <div class="window-header">
+            <p><strong> Pranav Kavade Portfolio.exe </strong> </p>
+            <button class="close-btn">X</button>
+        </div>
+        <div class="window-body">
+            <!-- Retro Command Prompt -->
+            <div id="cmd" class="command-prompt">
+                <p><span class="prompt">C:\Portfolio&gt;</span> <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a command..." autofocus></p>
+                <div id="cmd-output"></div>
+            </div>
+
+            <!-- Menu (hidden until loaded) -->
+            <div class="menu hidden">
+                <button class="menu-item" onclick="navigateTo('about')">About Me</button>
+                <button class="menu-item" onclick="navigateTo('journey')">Journey</button>
+                <button class="menu-item" onclick="navigateTo('achievements')">Achievements</button>
+                <button class="menu-item" onclick="navigateTo('resume')">Resume</button>
+            </div>
+
+            <!-- Sections -->
+            <section id="about" class="section hidden">
+                <h1> <center> About Me </center> </h1>
+                <img src="C:\Users\PRANAV\Downloads\2.0.jpg" alt="Pranav's photo" class="profile-pic">
+                <p> I’m Pranav Kavade, a passionate CS undergraduate with a relentless drive for building impactful technology solutions. My fascination with technology goes beyond just learning— <mark> I’m dedicated to creating innovations that leave a lasting impact on social life </mark>. <br/> <br/> Whether it’s building unique projects or exploring cutting-edge tools, I thrive in environments where I can push the boundaries of what’s possible. As a tech enthusiast, I’m constantly seeking out challenges that allow me to turn creative ideas into reality, solving real-world problems and making meaningful contributions to society.</p>
+
+                <br/> <br/>
+
+                <p>
+                    Contact me 
+                    <br/>
+
+                   <p> Mobile No :9168823863 </p>
+                    <p> Email: pranavkavade777@gmail.com </p>
+                   <a href="https://github.com/PranavKavade7"> <p> Github </p> </a>
+                </p>
+            </section>
+
+            <section id="journey" class="section hidden">
+                <h1> <center> Journey </center> </h1>
+                <p> My journey in technology began during my early college years, where I honed my skills by building websites, including clones of well-known platforms like Apple and Amazon. This hands-on experience laid the foundation for my growth in web development. As my skills matured, I ventured into freelancing, where I successfully created websites for commercial businesses, reaching over 10k+ users.
+
+                    <br/> <br/>
+
+Being a part of the <mark> Microsoft Learn Student Club (MLSC) </mark> as a technical member further enhanced my learning, exposing me to collaborative projects and open-source contributions. Later, I gained professional experience through an internship at Confexo International, where I worked as a Full-Stack Developer, building scalable solutions. Additionally, <mark> I was a finalist in the prestigious Google Hackathon, where my team tackled a complex problem statement with innovative solutions </mark> . This journey has shaped me into a problem-solver, ready to create impactful technology. </p>
+            </section>
+
+            <section id="achievements" class="section hidden">
+                <h1> <center> Achievements </center> </h1>
+                <p> <mark> Coding Competition Winner </mark> – Won the university coding competition, showcasing my skills in algorithmic problem-solving.
+                    <br/>  <br/>
+ <mark> Open-Source Contributor </mark> – Made meaningful contributions to open-source projects under the Microsoft Learn Student Club (MLSC). <br/> <br/>
+
+<mark> 1st Place in CodeNinjas, Symbiosis University </mark> – Ranked 1st out of 25 teams in the competitive CodeNinjas hackathon.   <br/> <br/>
+
+<mark> Ranked 4th in NIT Roorkee Hackathon </mark> – Achieved 4th position in this prestigious nationwide hackathon.    <br/> <br/>
+<mark> Commercial Web Development </mark> – Developed a website for a school business, successfully supporting over 10k+ users.   <br/>  <br/>
+<mark> Full-Stack Developer Internship </mark> – Interned at Confexo International, contributing to key projects as a Full-Stack Developer. </p>
+            </section>
+
+            <section id="resume" class="section hidden">
+                <h1> <center> Resume </center> </h1>
+                <a href="C:\Users\PRANAV\Downloads\Pranav_Kavade Oct Resume.pdf" download="Pranav_Resume.pdf" class="download-link"> <p> Download My Resume </p> </a>
+            </section>
+
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
